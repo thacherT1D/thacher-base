@@ -1,0 +1,68 @@
+@import "child_theme_variables";  // <--------- Add your variables into this file. Also add variables to overwrite Bootstrap variables here
+
+html {
+  font-size: 100%;
+}
+section {
+  // margin: 25px 0 0 0;
+  padding: 30px;
+}
+.main-header {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    background-size: cover;
+    background-position: center;
+    background: url("http://thacherbase.dev/wp-content/uploads/2017/09/hutchinson-261792-e1505967325782.jpg");
+    text-align: center;
+    .header-content {
+        position: relative;
+        text-align: center;
+        padding: 80px 15px 100px;
+        width: 100%;
+        .header-content-inner {
+            h1 {
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-top: 0;
+                margin-bottom: 0;
+                font-size: 50px;
+            }
+            hr {
+                margin: 30px auto;
+            }
+            p {
+                font-weight: 300;
+                font-size: 16px;
+                margin-bottom: 50px;
+            }
+        }
+    }
+
+}
+.inner-text {
+  padding: 0 15px;
+}
+//// BUTTONS
+.btn-solo {
+  margin: 25px 0;
+}
+//// CONTACT
+#contact {
+  background-color: $brand-primary;
+}
+.contact-form {
+  padding: 15px 0;
+}
+//// FOOTER
+.main-footer {
+  font-size: 80%;
+  line-height: 1.75;
+  background-color: #343A40;
+  color: white;
+  padding: 15px 0;
+}
+
+@media all and (max-width:480px) {
+  .xs-btn-to-block { width: 100%; display:block; }
+}
